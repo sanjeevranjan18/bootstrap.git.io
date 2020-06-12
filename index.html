@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my restuarunt</title>
+    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Source Sans Pro', sans-serif;
+
+        }
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">AMBYAS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal1">SignUp</a>
+                    </li>
+
+                    <div class="modal fade" id="myModal1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">New customer registrstion</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="" method="POST">
+                                        <div class="form-group">
+                                            <label for="email">Name*</label>
+                                            <input type="text" class="form-control" placeholder="Enter full name" name="username" id="email">
+                                        </div>
+                                        <label for="email">Email*</label>
+                                        <input type="Email" class="form-control" placeholder="Enter E-mail " name="email" id="email">
+                                        <label for="email">contact no.*</label>
+                                        <input type="text" class="form-control" placeholder="Enter mobile no. " name="mobile" id="mobile number">
+                                        <div class="form-group">
+                                            <label for="pwd">Address</label>
+                                            <input type="text" class="form-control" placeholder="Enter address for delivery" name="address" id="pwd">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" name="submit" value="Register"> Submit</button>
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="" data-toggle="modal" data-target="#myModal">Login <span class="sr-only">(current)</span></a>
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content" style="background-color:black; opacity: 0.8; color: white">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">login here</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <form action="" method="POST">
+                                            <div class="form-group">
+                                                <label for="email">Email address:</label>
+                                                <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="address">Address</label>
+                                                <input type="text" class="form-control" placeholder="address for delivery" id="pwd" name="address">
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox"> Remember me
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                                        </form>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            our specials
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#services">Breakfast</a>
+                            <a class="dropdown-item" href="#services">Lunch</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#gallary"> Gallary</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Food%20Wallpaper%207883%20Hd%20Wallpapers%20in%20Food%20n%20Drinks%20%20%20Imagescicom.jpg" alt="banners" width="1100" height="500"></div>
+            <div class="carousel-item">
+                <img src="images/hd%20wallpapers%20food%20wallpapers%20hd%20food%20wallpaper%20hd%20food%20wallpapers%20hd.jpg" alt="slides" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Inkedpexels-photo-461198_LI.jpg" alt="bannar" width="1100" height="500">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+
+
+    <div class="container-fluid" style="background-color:white; color:red;padding-top: 5px">
+        
+            <marquee scrollamount='3' onMouseOver="edd(this);"> <b>|| This is the notice ---FOR SALE<b> @ $39.7</b> || </b></marquee>
+            <section>
+                <div class="container-fluid" id="aboutus">
+                    <h1 class="text-danger text-center text-bold text-capitalize mt-5 pt-5 pb-5"> About us</h1>
+
+                    <hr class="mx-auto">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <img src="images/pngwave%20(2).png" alt=" hotel photo" style=" width: 100%"></div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h1 text-bold> know about us</h1>
+                            <hr>
+                            <p>A restaurant is generally an establishment where the public may obtain meals or refreshments. The term Restaurant has its origins in Paris, where one A. Boulanger started as a soup vendor in 1765. A sign on the door said “restaurant”, referring to the restorative quality of the soups and broths served within.</p>
+                            <p>A restaurant (French: [ʁɛstoʁɑ̃] (About this soundlisten)), or an eatery, is a business that prepares and serves food and drinks to customers.[1] Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast food restaurants and cafeterias, to mid-priced family restaurants, to high-priced luxury establishments.</p>
+                            <p>In Western countries, most mid- to high-range restaurants serve alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such as breakfast, lunch, and dinner (e.g., major fast food chains, diners, hotel restaurants, and airport restaurants). Other restaurants may serve only a single meal (for example, a pancake house may only serve breakfast) or they may serve two meals (e.g., lunch and dinner).</p>
+                            <p>A restaurant is generally an establishment where the public may obtain meals or refreshments. The term Restaurant has its origins in Paris, where one A. Boulanger started as a soup vendor in 1765. A sign on the door said “restaurant”, referring to the restorative quality of the soups and broths served within.</p>
+                            <p>A restaurant (French: [ʁɛstoʁɑ̃] (About this soundlisten)), or an eatery, is a business that prepares and serves food and drinks to customers.[1] Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast food restaurants and cafeterias, to mid-priced family restaurants, to high-priced luxury establishments.</p>
+
+
+
+                            <button class=" btn bg-primary text-white"> click on me</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+
+            </section>
+    </div>
+
+
+
+
+
+            <section>
+
+
+                <div class="container-fluid" id="services">
+                    <h1 class="text-danger text-center text-bold text-capitalize mt-4 pt-2 pb-2"> services</h1>
+                    <hr class="w-15 mx-auto pt-2px">
+
+
+
+                    <div class="row text-center mb-2">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="card" style="width:400px">
+                                <img class="card-img-top" src="images/hd%20wallpapers%20food%20wallpapers%20hd%20food%20wallpaper%20hd%20food%20wallpapers%20hd.jpg" alt="Card image">
+                                <div class="card-body bg-warning">
+                                    <h4 class="card-title">cheese pizza</h4>
+                                    <p class="card-text"> see special</p>
+                                    <a href="#" class="btn btn-primary">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="card" style="width:400px">
+                                <img class="card-img-top" src="images/Food%20Wallpaper%207883%20Hd%20Wallpapers%20in%20Food%20n%20Drinks%20%20%20Imagescicom.jpg" alt="Card image">
+                                <div class="card-body bg-warning">
+                                    <h4 class="card-title">SUNDAY special</h4>
+                                    <p class="card-text"> see special</p>
+                                    <a href="#" class="btn btn-primary">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="card" style="width:400px">
+                                <img class="card-img-top" src="images/Inkedpexels-photo-461198_LI.jpg" alt="Card image">
+                                <div class="card-body bg-warning">
+                                    <h4 class="card-title">EGG ROLL</h4>
+                                    <p class="card-text">OUR BEST RECIPIE.</p>
+                                    <a href="#" class="btn btn-primary">Order now</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="bg-primary">
+                <article class="py-2 text-center">
+                    <div>
+                        <h3 class="display-4 text-white"> 7903482611</h3>
+                        <p> if you want the best service then call us now</p>
+                        <button class="btn bg-warning"> contact us now</button>
+                    </div>
+
+
+                </article>
+
+            </section>
+
+
+            <section>
+
+                <div class="container-fluid bg-dark" id="gallary">
+                    <h1 class="text-light text-center text-bold text-capitalize mt-2 pt-2 pb-2">Gallary</h1>
+                    <hr class="w-25 my-auto pt-2">
+
+                    <div class="row py-2">
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/gallary1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/galarry2.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/gallary5.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/gallary6.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/galarry7.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/galarry8.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/galarry9.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/galarry10.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-lg-4 col-md-2 col-12">
+                            <img src="images/galarry7.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="bg-primary">
+                <article class=" py-5">
+                    <div class=" text-center">
+                        <h3 class="display-4 text-white">make an inquary</h3>
+                        <p> if you want the best service then call us now</p>
+                        <button class="btn bg-warning" data-toggle="modal" data-target="#myModal2"> join now</button>
+                    </div>
+
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal2">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">signup</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="/action_page.php">
+                                        <div class="form-group">
+                                            <label for="email">Email address:</label>
+                                            <input type="email" class="form-control" placeholder="Enter email" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Password:</label>
+                                            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </article>
+
+
+            </section>
+
+
+
+            <section>
+
+                <div class="container mb-2">
+                    <h1 class="text-danger text-center text-bold text-capitalize mt-5 pt-5 pb-5">contact us</h1>
+                    <hr class="w-25 mx-auto pt-2">
+
+
+                    <div class="w-50 mx-auto">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="email"> Your name</label>
+                                <input type="text" class="form-control" placeholder="your name" id="email" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd"> email:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="pwd">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd"> mobile no</label>
+                                <input type="mobile no," class="form-control" placeholder="number" id="pwd">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="form-control"></textarea>
+
+                            </div>
+
+
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+            <section>
+
+                <footer>
+                    <p class="text-center bg-dark text-white">@copyrighttecheortechenology.com2020 </p>
+
+
+                </footer>
+
+
+            </section>
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html> 
+
+<?php
+
+ include 'connection.php';
+ if(isset($_POST['submit'])){
+
+    $name=$_POST['username'];
+    $email= $_POST['email'] ;
+    $phoneno= $_POST['mobile'] ;
+    $address= $_POST['address'] ;
+
+    $insertquery="insert into signup(Name,email,phoneno,address) values( '$name','$email','$phoneno','$address')";
+
+   $res=mysqli_query( $con,$insertquery);
+
+   if($res){
+    ?>
+    <script> 
+    alert("congrats data inserted sucessfully ");
+</script>
+<?php
+   }else{
+    ?>
+    <script> 
+    alert( "please try again!" );
+</script>
+<?php
+   }
+
+ }
+
+
+
+
+?>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
